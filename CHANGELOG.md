@@ -5,7 +5,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-- Fix for manager writePump panic. [#595](https://github.com/xmidt-org/webpa-common/pull/595)
+- Fixed error string sent in response when device ID can't be parsed. [#599](https://github.com/xmidt-org/webpa-common/pull/599)
+
+## [v2.0.6]
+- Patch for manager writePump panic. [#595](https://github.com/xmidt-org/webpa-common/pull/595)
+
+## [v2.0.5]
+- Deprecated webhook/aws package, which also won't work with go 1.18+. [#596](https://github.com/xmidt-org/webpa-common/pull/596)
+- Bumped argus to v0.9.0. [#596](https://github.com/xmidt-org/webpa-common/pull/596)
 
 ## [v2.0.4]
 - Enforce cipher suites for TLS versions less than 1.3 that are not vulnerable to SWEET32
@@ -227,7 +234,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
  - The first official release. We will be better about documenting changes 
    moving forward.
 
-[Unreleased]: https://github.com/xmidt-org/webpa-common/compare/v2.0.4...HEAD
+[Unreleased]: https://github.com/xmidt-org/webpa-common/compare/v2.0.6...HEAD
+[v2.0.6]: https://github.com/xmidt-org/webpa-common/compare/v2.0.5...v2.0.6
+[v2.0.5]: https://github.com/xmidt-org/webpa-common/compare/v2.0.4...v2.0.5
 [v2.0.4]: https://github.com/xmidt-org/webpa-common/compare/v2.0.3...v2.0.4
 [v2.0.3]: https://github.com/xmidt-org/webpa-common/compare/v2.0.2...v2.0.3
 [v2.0.2]: https://github.com/xmidt-org/webpa-common/compare/v2.0.1...v2.0.2
